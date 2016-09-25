@@ -5,9 +5,11 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import pl.sebcel.minecraft.celeium.block.ModBlocks;
 import pl.sebcel.minecraft.celeium.item.ModItems;
 import pl.sebcel.minecraft.celeium.proxy.CommonProxy;
+import pl.sebcel.minecraft.celeium.world.CeleiumWorldGenerator;
 
 @Mod(modid = CeleiumMod.modId, name = CeleiumMod.name, version = CeleiumMod.version, acceptedMinecraftVersions = "[1.10]")
 public class CeleiumMod {
@@ -24,18 +26,16 @@ public class CeleiumMod {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		System.out.println(name + " is loading!");
 		ModItems.init();
 		ModBlocks.init();
+		GameRegistry.registerWorldGenerator(new CeleiumWorldGenerator(), 0);
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
 	}
 }
