@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import pl.sebcel.minecraft.celeium.block.ModBlocks;
 import pl.sebcel.minecraft.celeium.item.ModItems;
 import pl.sebcel.minecraft.celeium.proxy.CommonProxy;
+import pl.sebcel.minecraft.celeium.recipes.ModRecipes;
 import pl.sebcel.minecraft.celeium.world.CeleiumWorldGenerator;
 
 @Mod(modid = CeleiumMod.modId, name = CeleiumMod.name, version = CeleiumMod.version, acceptedMinecraftVersions = "[1.10]")
@@ -28,6 +29,7 @@ public class CeleiumMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		ModItems.init();
 		ModBlocks.init();
+		ModRecipes.init();
 		GameRegistry.registerWorldGenerator(new CeleiumWorldGenerator(), 0);
 	}
 
