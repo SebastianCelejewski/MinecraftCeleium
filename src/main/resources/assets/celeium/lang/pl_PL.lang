@@ -1,5 +1,6 @@
 # Items
 item.celeium.name=Celejum
+item.celeiumGrinder.name=Młynek Celejum
 
 # Blocks
 tile.oreCeleium.name=Ruda Celejum

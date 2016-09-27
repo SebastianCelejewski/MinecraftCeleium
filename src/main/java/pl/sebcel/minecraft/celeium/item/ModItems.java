@@ -7,9 +7,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
     public static ItemBase celeium;
+    public static ItemBase celeiumGrinder;
     
     public static void init() {
         celeium = register(new ItemBase("celeium").setCreativeTab(CreativeTabs.MATERIALS));
+        celeiumGrinder = register(new ItemBase("celeiumGrinder").setCreativeTab(CreativeTabs.TOOLS));
     }
 
     private static <T extends Item> T register(T item) {
