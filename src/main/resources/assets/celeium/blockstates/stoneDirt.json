@@ -1,0 +1,17 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "end": "celeium:blocks/stoneDirtTop",
+            "side": "celeium:blocks/stoneDirtSide"
+        }
+    },
+    "variants": {
+        "normal": {
+            "model": "cube_column"
+        },
+        "inventory": {
+            "model": "cube_column"
+        }
+    }
+}

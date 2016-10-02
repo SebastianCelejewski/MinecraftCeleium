@@ -1,17 +1,20 @@
 package pl.sebcel.minecraft.celeium.block;
 
-import pl.sebcel.minecraft.celeium.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import pl.sebcel.minecraft.celeium.item.ModItems;
 
 public class ModBlocks {
 
     public static BlockOre oreCeleium;
+    public static BlockBase stoneDirt;
 
     public static void init() {
         oreCeleium = register(new BlockOre("oreCeleium", 3f, 5f, ModItems.celeium).setCreativeTab(CreativeTabs.MATERIALS));
+        stoneDirt = register(new BlockBase(Material.ROCK, "stoneDirt").setCreativeTab(CreativeTabs.MATERIALS));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

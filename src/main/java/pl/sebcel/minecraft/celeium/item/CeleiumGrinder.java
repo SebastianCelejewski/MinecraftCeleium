@@ -34,7 +34,7 @@ public class CeleiumGrinder extends ItemBase {
         {
             if (!worldIn.isRemote)
             {
-                worldIn.setBlockState(pos, Blocks.COBBLESTONE.getDefaultState(), 11);
+                worldIn.setBlockState(pos, Blocks.STONE.getDefaultState(), 11);
                 stack.damageItem(1, playerIn);
             }
             
