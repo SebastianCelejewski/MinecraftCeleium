@@ -1,6 +1,7 @@
 package pl.sebcel.minecraft.celeium.item;
 
 import pl.sebcel.minecraft.celeium.CeleiumMod;
+import pl.sebcel.minecraft.celeium.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.state.IBlockState;
@@ -31,6 +32,17 @@ public class CeleiumGrinder extends ItemBase {
         Block block = iblockstate.getBlock();
 
         if (block == Blocks.GRASS || block == Blocks.GRASS_PATH || block == Blocks.DIRT)
+        {
+            if (!worldIn.isRemote)
+            {
+                worldIn.setBlockState(pos, ModBlocks.stoneDirt.getDefaultState(), 11);
+                stack.damageItem(1, playerIn);
+            }
+            
+            return EnumActionResult.SUCCESS;
+        }
+
+        if (block == ModBlocks.stoneDirt)
         {
             if (!worldIn.isRemote)
             {
