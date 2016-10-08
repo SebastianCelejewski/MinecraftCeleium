@@ -1,0 +1,6 @@
+{
+    "parent": "celeium:block/blockLampBase",
+    "textures": {
+        "texture": "celeium:blocks/lamp"
+    }
+} 

@@ -14,6 +14,7 @@ public class ModBlocks {
     public static BlockBase terracottaOrange;
     public static BlockBase glazeGreen;
     public static BlockBase gypsumWhite;
+    public static Block blockLamp;
 
     public static void init() {
         oreCeleium = register(new BlockOre("oreCeleium", 3f, 5f, ModItems.celeium).setCreativeTab(CreativeTabs.MATERIALS));
@@ -21,6 +22,7 @@ public class ModBlocks {
         terracottaOrange = register(new BlockBase(Material.ROCK, "terracottaOrange").setCreativeTab(CreativeTabs.MATERIALS));
         glazeGreen = register(new BlockBase(Material.ROCK, "glazeGreen").setCreativeTab(CreativeTabs.MATERIALS));
         gypsumWhite = register(new BlockBase(Material.ROCK, "gypsumWhite").setCreativeTab(CreativeTabs.MATERIALS));
+        blockLamp = register(new BlockLamp());
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

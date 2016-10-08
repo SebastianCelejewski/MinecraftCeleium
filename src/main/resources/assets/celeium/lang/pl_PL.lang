@@ -5,6 +5,7 @@ item.celeiumGrinder.name=Młynek Celejum
 # Blocks
 tile.oreCeleium.name=Ruda Celejum
 tile.stoneDirt.name=Kamienista ziemia
-tile.terakota.name=Terakota
+tile.terraCottaOrange.name=Pomarańczowa terakota
 tile.glazeGreen.name=Zielona glazura
 tile.gypsumWhite.name=Biały gips
+tile.blockLamp.name=Lampa
