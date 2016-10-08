@@ -5,3 +5,6 @@ item.celeiumGrinder.name=Celeium Grinder
 # Blocks
 tile.oreCeleium.name=Celeium Ore
 tile.stoneDirt.name=Stone and Dirt
+tile.terakota.name=Terakota
+tile.glazeGreen.name=Green Glaze
+tile.gypsumWhite.name=White Gypsum
